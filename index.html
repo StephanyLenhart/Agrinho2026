@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte | Futuro Sustentável</title>
+    <title>Raízes Digitais | Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
 </head>
 <body>
     <!-- Header / Navegação -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Agro<span class="highlight">Forte</span></span>
+                <i class="fas fa-tree"></i>
+                <span>Raízes<span class="highlight">Digitais</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#solucoes">Soluções</a></li>
                 <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
             <div class="menu-toggle">
@@ -33,9 +35,13 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="animate-title">Agro Forte, <span class="highlight">Futuro Sustentável</span></h1>
-            <p class="animate-subtitle">Produzindo mais com menos, respeitando o planeta e alimentando o mundo com responsabilidade.</p>
-            <button class="cta-btn" id="saibaMaisBtn">Descubra Como <i class="fas fa-arrow-right"></i></button>
+            <span class="tagline"><i class="fas fa-seedling"></i> Tecnologia que floresce no campo</span>
+            <h1 class="animate-title">Agro Forte, <br><span class="highlight">Futuro Sustentável</span></h1>
+            <p class="animate-subtitle">Conectamos o saber tradicional à inovação digital para um agro mais produtivo, justo e sustentável.</p>
+            <div class="hero-buttons">
+                <button class="cta-btn primary" id="saibaMaisBtn">Explorar Soluções <i class="fas fa-arrow-right"></i></button>
+                <button class="cta-btn secondary" id="videoBtn"><i class="fas fa-play"></i> Ver Demo</button>
+            </div>
         </div>
         <div class="hero-stats">
             <div class="stat">
@@ -57,26 +63,27 @@
     <section id="sobre" class="sobre">
         <div class="container">
             <div class="section-header">
-                <h2>Sobre Nós</h2>
+                <h2>Nossas Raízes</h2>
                 <div class="underline"></div>
-                <p>Unindo tecnologia, tradição e consciência ambiental</p>
+                <p>Onde a tradição encontra a inovação digital</p>
             </div>
             <div class="sobre-content">
                 <div class="sobre-texto">
-                    <h3>Produzir bem para fazer o bem</h3>
-                    <p>A Agro Forte nasceu com a missão de revolucionar o agronegócio brasileiro, provando que é possível ser altamente produtivo e ecologicamente responsável. Investimos em pesquisa, inovação e práticas regenerativas.</p>
+                    <h3>Raízes Digitais</h3>
+                    <p>Somos uma plataforma que conecta produtores rurais a tecnologias sustentáveis de ponta. Nascemos da crença de que o futuro do agro é digital, regenerativo e inclusivo.</p>
+                    <p>Unimos inteligência artificial, dados de campo e conhecimento tradicional para criar soluções que aumentam produtividade, reduzem impactos ambientais e valorizam quem planta.</p>
                     <div class="valores">
                         <div class="valor">
-                            <i class="fas fa-leaf"></i>
-                            <span>Sustentabilidade</span>
-                        </div>
-                        <div class="valor">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Eficiência</span>
+                            <i class="fas fa-microchip"></i>
+                            <span>Inovação</span>
                         </div>
                         <div class="valor">
                             <i class="fas fa-hand-holding-heart"></i>
-                            <span>Responsabilidade Social</span>
+                            <span>Inclusão</span>
+                        </div>
+                        <div class="valor">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>Sustentabilidade</span>
                         </div>
                     </div>
                 </div>
@@ -91,9 +98,9 @@
     <section id="solucoes" class="solucoes">
         <div class="container">
             <div class="section-header">
-                <h2>Nossas Soluções</h2>
+                <h2>Soluções que Transformam</h2>
                 <div class="underline"></div>
-                <p>Tecnologias verdes para o campo do futuro</p>
+                <p>Tecnologia verde para cada hectare</p>
             </div>
             <div class="cards-container" id="cardsContainer">
                 <!-- Cards serão populados via JavaScript -->
@@ -105,9 +112,9 @@
     <section id="impacto" class="impacto">
         <div class="container">
             <div class="section-header">
-                <h2>Nosso Impacto Real</h2>
+                <h2>Impacto Real</h2>
                 <div class="underline"></div>
-                <p>Números que transformam o agro e o planeta</p>
+                <p>Números que comprovam nossa transformação</p>
             </div>
             <div class="impacto-grid">
                 <div class="impacto-card" data-value="85">
@@ -125,11 +132,25 @@
                     <h3><span class="counter">0</span>M+</h3>
                     <p>Árvores plantadas</p>
                 </div>
-                <div class="impacto-card" data-value="50">
-                    <i class="fas fa-recycle"></i>
-                    <h3><span class="counter">0</span>%</h3>
-                    <p>Redução de resíduos</p>
+                <div class="impacto-card" data-value="500">
+                    <i class="fas fa-users"></i>
+                    <h3><span class="counter">0</span>+</h3>
+                    <p>Propriedades atendidas</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Destaques -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conhecimento que Floresce</h2>
+                <div class="underline"></div>
+                <p>Artigos, cases e tendências do agro sustentável</p>
+            </div>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Posts serão populados via JavaScript -->
             </div>
         </div>
     </section>
@@ -137,13 +158,20 @@
     <!-- Newsletter / Contato -->
     <section id="contato" class="newsletter">
         <div class="container">
-            <h2>Junte-se à Revolução Verde</h2>
-            <p>Receba novidades, dicas sustentáveis e cases de sucesso.</p>
-            <form id="newsletterForm">
-                <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Inscrever-se <i class="fas fa-paper-plane"></i></button>
-            </form>
-            <div id="formMessage" class="form-message"></div>
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Receba Nossas Raízes</h2>
+                    <p>Inscreva-se para receber novidades, dicas sustentáveis e cases de sucesso diretamente no seu e-mail.</p>
+                </div>
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <input type="text" id="nomeInput" placeholder="Seu nome" required>
+                        <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
+                    </div>
+                    <button type="submit">Inscrever-se <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
         </div>
     </section>
 
@@ -151,31 +179,42 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <i class="fas fa-seedling"></i>
-                <span>Agro<span class="highlight">Forte</span></span>
-                <p>Cultivando o amanhã, hoje.</p>
+                <i class="fas fa-tree"></i>
+                <span>Raízes<span class="highlight">Digitais</span></span>
+                <p>Cultivando o amanhã com tecnologia e propósito.</p>
             </div>
             <div class="footer-links">
-                <h4>Links Rápidos</h4>
+                <h4>Navegação</h4>
                 <ul>
                     <li><a href="#home">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#solucoes">Soluções</a></li>
                     <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Redes Sociais</h4>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Agro Forte - Futuro Sustentável. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Raízes Digitais - Agro Forte, Futuro Sustentável. Todos os direitos reservados.</p>
         </div>
     </footer>
 
