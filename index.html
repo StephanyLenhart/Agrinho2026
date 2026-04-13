@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte | Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>Agro<span class="highlight">Forte</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-title">Agro Forte, <span class="highlight">Futuro Sustentável</span></h1>
+            <p class="animate-subtitle">Produzindo mais com menos, respeitando o planeta e alimentando o mundo com responsabilidade.</p>
+            <button class="cta-btn" id="saibaMaisBtn">Descubra Como <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>+40%</h3>
+                <p>produtividade sustentável</p>
+            </div>
+            <div class="stat">
+                <h3>-30%</h3>
+                <p>emissões de carbono</p>
+            </div>
+            <div class="stat">
+                <h3>10M+</h3>
+                <p>hectares preservados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nós</h2>
+                <div class="underline"></div>
+                <p>Unindo tecnologia, tradição e consciência ambiental</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <h3>Produzir bem para fazer o bem</h3>
+                    <p>A Agro Forte nasceu com a missão de revolucionar o agronegócio brasileiro, provando que é possível ser altamente produtivo e ecologicamente responsável. Investimos em pesquisa, inovação e práticas regenerativas.</p>
+                    <div class="valores">
+                        <div class="valor">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustentabilidade</span>
+                        </div>
+                        <div class="valor">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Eficiência</span>
+                        </div>
+                        <div class="valor">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Responsabilidade Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-img">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop" alt="Agricultura sustentável">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Section -->
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossas Soluções</h2>
+                <div class="underline"></div>
+                <p>Tecnologias verdes para o campo do futuro</p>
+            </div>
+            <div class="cards-container" id="cardsContainer">
+                <!-- Cards serão populados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto Section -->
+    <section id="impacto" class="impacto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Impacto Real</h2>
+                <div class="underline"></div>
+                <p>Números que transformam o agro e o planeta</p>
+            </div>
+            <div class="impacto-grid">
+                <div class="impacto-card" data-value="85">
+                    <i class="fas fa-tint"></i>
+                    <h3><span class="counter">0</span>%</h3>
+                    <p>Economia de água</p>
+                </div>
+                <div class="impacto-card" data-value="92">
+                    <i class="fas fa-solar-panel"></i>
+                    <h3><span class="counter">0</span>%</h3>
+                    <p>Energia renovável</p>
+                </div>
+                <div class="impacto-card" data-value="120">
+                    <i class="fas fa-tree"></i>
+                    <h3><span class="counter">0</span>M+</h3>
+                    <p>Árvores plantadas</p>
+                </div>
+                <div class="impacto-card" data-value="50">
+                    <i class="fas fa-recycle"></i>
+                    <h3><span class="counter">0</span>%</h3>
+                    <p>Redução de resíduos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Contato -->
+    <section id="contato" class="newsletter">
+        <div class="container">
+            <h2>Junte-se à Revolução Verde</h2>
+            <p>Receba novidades, dicas sustentáveis e cases de sucesso.</p>
+            <form id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscrever-se <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-seedling"></i>
+                <span>Agro<span class="highlight">Forte</span></span>
+                <p>Cultivando o amanhã, hoje.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Agro Forte - Futuro Sustentável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
